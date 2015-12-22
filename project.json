@@ -10,7 +10,6 @@
   },
 
   "dependencies": {
-     "Microsoft.Net.Http": "2.2.22", 
     "Microsoft.Azure.Search": "0.13.0-preview"
   },
 
@@ -19,6 +18,10 @@
   },
 
   "frameworks": {
-    "dnx451": { }    
+    "dnx451": {
+        "frameworkAssemblies": {
+            "System.Net.Http": "4.0.0"
+        }
+     }    
   }
 }
