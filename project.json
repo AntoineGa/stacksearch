@@ -10,7 +10,7 @@
   },
 
   "dependencies": {
-     "Microsoft.AspNet.Http": "1.0.0-rc1-final", 
+     "Microsoft.Net.Http": "2.2.22", 
     "Microsoft.Azure.Search": "0.13.0-preview"
   },
 
