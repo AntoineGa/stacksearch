@@ -10,6 +10,7 @@
   },
 
   "dependencies": {
+      "System.Net.Http": "4.0.0-beta-22816",
     "Microsoft.Azure.Search": "0.13.0-preview"
   },
 
