@@ -9,6 +9,7 @@ namespace stacksearch
     {
         public static int Main(string[] args)
         {
+            //Logo ;)
             var currentColor = Console.ForegroundColor;
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -45,10 +46,12 @@ namespace stacksearch
                 WriteColorAndReturn(currentColor, ConsoleColor.Cyan, string.Format("Buscando [{0}]...", text),true);
                 var results = SearchService.SearchDocuments(text,string.Empty, string.Empty);
                 if(!results.Any()){
+                    //No results
                     Console.WriteLine("No se han encontrado resultados :(");
                     Console.WriteLine("----------------------------------");
                 }
                 else{
+                    //Looping
                     foreach(var entry in results){
                         WriteColorAndReturn(currentColor, ConsoleColor.DarkCyan, "Titulo: ");
                         Console.WriteLine(entry.Title);
@@ -71,6 +74,7 @@ namespace stacksearch
             }
             return 0;
         }
+        
         
         private static void WriteColorAndReturn(ConsoleColor currentColor, ConsoleColor colorToUse, string text, bool returnLine = false){
             

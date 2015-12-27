@@ -33,7 +33,7 @@ namespace stacksearch{
         public List<JObject> Value{get;set;}
     }
     
-    
+    //Simple implementation, no need for fancy wrappers and SDKs :)
     public static class SearchService{
         private readonly static string ServiceUrl = "https://azs-playground.search.windows.net/indexes/stackexchange/docs/search?api-version=2015-02-28";
        
