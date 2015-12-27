@@ -39,7 +39,7 @@ namespace stacksearch
            Console.ForegroundColor = currentColor;
             while(true){
                 Console.Write("Ingrese un texto a buscar y presione ENTER o EXIT para terminar:");
-                var text = Console.ReadLine();
+                var text = Console.ReadLine().Trim();
                 if("exit".Equals(text.ToLowerInvariant()))break;
                 Console.Clear();
                 WriteColorAndReturn(currentColor, ConsoleColor.Cyan, string.Format("Buscando [{0}]...", text),true);
@@ -65,6 +65,7 @@ namespace stacksearch
                         Console.WriteLine("----------------------------------");
                         WriteColorAndReturn(currentColor, ConsoleColor.Cyan, "<Presione una tecla para más resultados>",true);
                         Console.ReadKey();
+                        Console.Clear();
                     }
                 }
             }
